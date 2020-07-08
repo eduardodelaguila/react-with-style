@@ -1,0 +1,61 @@
+.BurgerMenu {
+    position: absolute;
+    top: 0;
+    left: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 1em;
+    height: 100%;
+    width: 350px;
+    background-color: #475467;
+    z-index: 5;
+    transition: left 0.3s;
+
+    &.open {
+        left: 0;
+    }
+
+    &.closed {
+        left: -450px;
+    }
+
+    &__Close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
+        font-size: 1.5em;
+        background-color: #fff;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        & .fad {
+            text-shadow: inherit;
+            transition: text-shadow 0.3s;
+        }
+    }
+
+    &__Link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 3em;
+        width: 100%;
+        padding: 0 21px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        overflow: hidden;
+
+        &:first-of-type {
+            margin: 8px 0 0 0;
+        }
+    }
+}
