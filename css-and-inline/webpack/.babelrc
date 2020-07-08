@@ -1,0 +1,19 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "modules": "./src/modules/",
+                    "styles": "./src/styles/",
+                    "components": "./src/components/",
+                    "context": "./src/context/",
+                    "resources": "./src/resources/"
+                }
+            }
+        ],
+        ["babel-plugin-styled-components"]
+    ]
+}

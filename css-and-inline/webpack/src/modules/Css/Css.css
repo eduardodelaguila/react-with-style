@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.Css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.Css__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 15px;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.3);
+}
+
+.Css__form__title {
+    color: #8d9acf;
+    font-size: 4.5em;
+    font-family: 'Sacramento';
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.Css__form__input-label {
+    align-self: flex-start;
+    margin: 8px 0 2px 16px;
+}
+
+.Css__form__input {
+    width: 100%;
+    height: 2.5em;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 4px 0;
+    border-radius: 15px;
+    outline: none;
+}
+
+.Css__form__button {
+    height: 2.5em;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 8px 0 016px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #8d9acf;
+    color: #fff;
+}

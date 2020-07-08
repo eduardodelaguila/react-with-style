@@ -1,0 +1,50 @@
+.NavBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    height: 4em;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Raleway';
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s;
+
+    &__toggle-hamburger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
+        font-size: 1.5em;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        & .fad {
+            text-shadow: inherit;
+            transition: text-shadow 0.3s;
+        }
+    }
+}
+
+.NavBar__hamburger-menu {
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 1em;
+    z-index: 5;
+    background-color: red;
+    transition: transform 0.3;
+}
